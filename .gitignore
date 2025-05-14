@@ -1,3 +1,55 @@
 # Godot 4+ specific ignores
 .godot/
+
+# Godot-specific ignores
+.import/
+export.cfg
+export_presets.cfg
+*.translation
+
+# Imported translations (automatically generated from CSV files)
+*.translation
+
+# Mono-specific ignores
+.mono/
+data_*/
+mono_crash.*.json
+
+# System/editor files
+*~
+.DS_Store
+.directory
+.~lock.*
+.vscode/
+.idea/
+
+# GDExtension/Native build artifacts
+/build/
+*.o
+*.os
+*.so
+*.dll
+*.dylib
+*.a
+*.lib
+*.dblite
+*.obj
+*.exp
+*.pdb
+
+# Generated scenes
+*.gen.*
+*.gen/
+
+# Android export
 /android/
+/android/build/
+/android/bin/
+/android/libs/
+/android/obj/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
