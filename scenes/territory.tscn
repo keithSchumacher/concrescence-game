@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://cj0h108ui1utk"]
+
+[ext_resource type="Script" uid="uid://cc8pmpynjmmdb" path="res://scripts/territory.gd" id="1_22d1k"]
+
+[node name="Territory" type="Node2D"]
+script = ExtResource("1_22d1k")
+
+[node name="Visual" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(100, 100)
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.396078, 0.321569, 0.741176, 1)
+
+[node name="TroopLabel" type="Label" parent="."]
+custom_minimum_size = Vector2(100, 100)
+offset_right = 100.0
+offset_bottom = 100.0
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1

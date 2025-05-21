@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://ckb5xlvejcxhn"]
+
+[ext_resource type="PackedScene" uid="uid://cj0h108ui1utk" path="res://scenes/territory.tscn" id="1_nl0sk"]
+
+[node name="TestGame" type="Node2D"]
+
+[node name="Territory" parent="." instance=ExtResource("1_nl0sk")]
+territory_owner = "Player1"
+troop_count = 5
