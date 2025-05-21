@@ -13,7 +13,7 @@ func _ready():
 func update_visual():
 	label.text = str(troop_count)
 	
-	match owner:
+	match territory_owner:
 		"Player1":
 			visual.color = Color.hex(0x3498dbff)  # Blue
 		"Player2":
