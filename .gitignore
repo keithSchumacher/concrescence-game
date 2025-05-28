@@ -53,3 +53,6 @@ mono_crash.*.json
 *.temp
 *.swp
 *.swo
+
+# Jujutsu files
+.jj/
