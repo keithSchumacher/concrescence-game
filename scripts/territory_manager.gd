@@ -18,8 +18,19 @@ var edges = [
 	["C", "A"]
 ]
 
+func _on_turn_changed(player):
+	print("TURN: It's now %s's turn" % player)
+
+func _on_phase_changed(player, phase):
+	print("PHASE: %s is now in the %s phase" % [player, phase])
+
 # Called when the node enters the scene tree
 func _ready():
+	var turn_manager = get_node("../TurnManager")
+	# Connect to phase/turn change signals
+	turn_manager.connect("phase_changed", Callable(self, "_on_phase_changed"))
+	turn_manager.connect("turn_changed", Callable(self, "_on_turn_changed"))
+	
 	for id in territories:
 		var data = territories[id]
 		
