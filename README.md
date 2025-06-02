@@ -47,7 +47,7 @@ concrescence-game/
 
 ### 🧪 Early Prototype Goals
 
-* [ ] Display a graph with nodes and edges.
+* [x] Display a graph with nodes and edges.
 * [ ] Click on nodes to toggle/control them.
 * [ ] Load graph structure from config file.
 * [ ] Add player ownership logic.

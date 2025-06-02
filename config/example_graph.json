@@ -1,0 +1,35 @@
+{
+  "nodes": [
+    {
+      "id": "A",
+      "position": [100, 100],
+      "owner": "Player1",
+      "troops": 5
+    },
+    {
+      "id": "B",
+      "position": [300, 150],
+      "owner": "Player2",
+      "troops": 3
+    },
+    {
+      "id": "C",
+      "position": [500, 300],
+      "owner": "Neutral",
+      "troops": 1
+    },
+    {
+      "id": "D",
+      "position": [200, 400],
+      "owner": "Player1",
+      "troops": 2
+    }
+  ],
+  "edges": [
+    {"from": "A", "to": "B"},
+    {"from": "B", "to": "C"},
+    {"from": "C", "to": "A"},
+    {"from": "A", "to": "D"},
+    {"from": "D", "to": "C"}
+  ]
+} 

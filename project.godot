@@ -14,3 +14,7 @@ config/name="Concrescence"
 run/main_scene="uid://ckb5xlvejcxhn"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+TerritoryManager="*res://scripts/territory_manager.gd"
